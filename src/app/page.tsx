@@ -11,6 +11,11 @@ export default function Home() {
   const mitigationImg = PlaceHolderImages.find(img => img.id === 'mitigation-hero');
   const activeFireImg = PlaceHolderImages.find(img => img.id === 'during-fire-hero');
   const postFireImg = PlaceHolderImages.find(img => img.id === 'post-fire-hero');
+  
+  const forestDetail = PlaceHolderImages.find(img => img.id === 'forest-detail');
+  const rebuildDetail = PlaceHolderImages.find(img => img.id === 'rebuild-detail');
+  const rainDetail = PlaceHolderImages.find(img => img.id === 'rain-detail');
+  const shelterDetail = PlaceHolderImages.find(img => img.id === 'shelter-detail');
 
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-accent/30 selection:text-accent-foreground">
@@ -52,11 +57,11 @@ export default function Home() {
                 <div className="space-y-4 pt-12">
                   <div className="relative h-48 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <Image 
-                      src="https://picsum.photos/seed/forest/400/400" 
-                      alt="Dry forest brush" 
+                      src={forestDetail?.imageUrl || "https://picsum.photos/seed/forest/400/400"} 
+                      alt={forestDetail?.description || "Dry forest brush"} 
                       fill 
                       className="object-cover"
-                      data-ai-hint="dry forest"
+                      data-ai-hint={forestDetail?.imageHint || "dry forest"}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                       <span className="text-white font-bold">Mitigation</span>
@@ -64,11 +69,11 @@ export default function Home() {
                   </div>
                   <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <Image 
-                      src="https://picsum.photos/seed/rebuild/400/600" 
-                      alt="Community support" 
+                      src={rebuildDetail?.imageUrl || "https://picsum.photos/seed/rebuild/400/600"} 
+                      alt={rebuildDetail?.description || "Community support"} 
                       fill 
                       className="object-cover"
-                      data-ai-hint="community support"
+                      data-ai-hint={rebuildDetail?.imageHint || "community support"}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                       <span className="text-white font-bold">Recovery</span>
@@ -78,11 +83,11 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <Image 
-                      src="https://picsum.photos/seed/rain/400/600" 
-                      alt="Rain drought" 
+                      src={rainDetail?.imageUrl || "https://picsum.photos/seed/rain/400/600"} 
+                      alt={rainDetail?.description || "Rain drought"} 
                       fill 
                       className="object-cover"
-                      data-ai-hint="dry rain"
+                      data-ai-hint={rainDetail?.imageHint || "dry rain"}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                       <span className="text-white font-bold">Prevention</span>
@@ -90,11 +95,11 @@ export default function Home() {
                   </div>
                   <div className="relative h-48 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
                     <Image 
-                      src="https://picsum.photos/seed/shelter/400/400" 
-                      alt="Emergency response" 
+                      src={shelterDetail?.imageUrl || "https://picsum.photos/seed/shelter/400/400"} 
+                      alt={shelterDetail?.description || "Emergency response"} 
                       fill 
                       className="object-cover"
-                      data-ai-hint="emergency shelter"
+                      data-ai-hint={shelterDetail?.imageHint || "emergency shelter"}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
                       <span className="text-white font-bold">Aid</span>

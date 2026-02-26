@@ -20,10 +20,28 @@
       "imageHint": "burnt forest regrowth"
     },
     {
-      "id": "kindling-detail",
-      "description": "Close up of dry leaves and twigs near a home.",
-      "imageUrl": "https://picsum.photos/seed/kindling/600/400",
-      "imageHint": "dry leaves"
+      "id": "forest-detail",
+      "description": "Dry forest brush detail.",
+      "imageUrl": "https://picsum.photos/seed/forest/400/400",
+      "imageHint": "dry forest"
+    },
+    {
+      "id": "rebuild-detail",
+      "description": "Community support and rebuilding effort.",
+      "imageUrl": "https://picsum.photos/seed/rebuild/400/600",
+      "imageHint": "community support"
+    },
+    {
+      "id": "rain-detail",
+      "description": "Dry rain/drought conditions.",
+      "imageUrl": "https://picsum.photos/seed/rain/400/600",
+      "imageHint": "dry rain"
+    },
+    {
+      "id": "shelter-detail",
+      "description": "Emergency response and shelter.",
+      "imageUrl": "https://picsum.photos/seed/shelter/400/400",
+      "imageHint": "emergency shelter"
     }
   ]
 }

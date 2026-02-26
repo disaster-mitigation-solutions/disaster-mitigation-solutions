@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "mitigation-hero",
+      "description": "A dry forest floor with thick brush and kindling, symbolizing fire risk.",
+      "imageUrl": "https://images.unsplash.com/photo-1758661827260-89a8ed2f9d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkcnklMjBmb3Jlc3QlMjBicnVzaHxlbnwwfHx8fDE3NzIxNDIxMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dry forest brush"
+    },
+    {
+      "id": "during-fire-hero",
+      "description": "Emergency services and support centers helping people during a crisis.",
+      "imageUrl": "https://images.unsplash.com/photo-1759997725200-e3f5d565a8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbWVyZ2VuY3klMjBzaGVsdGVyfGVufDB8fHx8MTc3MjE0MjEzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "emergency shelter"
+    },
+    {
+      "id": "post-fire-hero",
+      "description": "A landscape showing signs of regrowth and flood prevention measures after a fire.",
+      "imageUrl": "https://images.unsplash.com/photo-1769078536360-92f8897cebfa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxidXJudCUyMGZvcmVzdCUyMHJlZ3Jvd3RofGVufDB8fHx8MTc3MjE0MjEzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "burnt forest regrowth"
+    },
+    {
+      "id": "forest-detail",
+      "description": "Dry forest brush detail.",
+      "imageUrl": "https://images.unsplash.com/photo-1754056467243-4de3759b04f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkcnklMjBmb3Jlc3R8ZW58MHx8fHwxNzcyMTQyMTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dry forest"
+    },
+    {
+      "id": "rebuild-detail",
+      "description": "Community support and rebuilding effort.",
+      "imageUrl": "https://images.unsplash.com/photo-1529209076408-5a115ec9f1c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21tdW5pdHklMjBzdXBwb3J0fGVufDB8fHx8MTc3MjE0MjEzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community support"
+    },
+    {
+      "id": "rain-detail",
+      "description": "Dry rain/drought conditions.",
+      "imageUrl": "https://images.unsplash.com/photo-1693410405496-676622ca9dc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkcnklMjByYWlufGVufDB8fHx8MTc3MjE0MjEzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dry rain"
+    },
+    {
+      "id": "shelter-detail",
+      "description": "Emergency response and shelter.",
+      "imageUrl": "https://images.unsplash.com/photo-1720720349288-884b1d6c67ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlbWVyZ2VuY3klMjBzaGVsdGVyfGVufDB8fHx8MTc3MjE0MjEzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "emergency shelter"
+    }
+  ]
 }
