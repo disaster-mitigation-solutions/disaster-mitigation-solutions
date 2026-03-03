@@ -1,4 +1,3 @@
-
 import { Navigation } from '@/components/Navigation';
 import { ResourceSection } from '@/components/ResourceSection';
 import { Button } from '@/components/ui/button';
@@ -64,7 +63,7 @@ export default function Home() {
                       data-ai-hint={forestDetail?.imageHint || "dry forest"}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                      <span className="text-white font-bold">Mitigation</span>
+                      <span className="text-white font-bold">Resilience</span>
                     </div>
                   </div>
                   <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl transform transition-transform hover:-translate-y-2">
@@ -112,10 +111,10 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Stage 1: Mitigation */}
+      {/* Stage 1: Climate Resilience */}
       <ResourceSection
-        id="mitigation"
-        subtitle="Stage 1: Mitigation"
+        id="resilience"
+        subtitle="Stage 1: Climate Resilience"
         title="Prevention Before the Spark"
         description="The most effective fire management happens before the smoke appears. Addressing extreme weather, heat domes, and dry kindling through home hardening and defensible space creates a buffer of resilience."
         imageUrl={mitigationImg?.imageUrl || ""}
