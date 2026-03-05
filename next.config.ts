@@ -2,11 +2,9 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  // enable static export
-  output: "export",
 
   // Optional: Change the output directory `out` -> `dist`
-  distDir: 'dist',
+  distDir: './dist',
 
   //basePath: "",
   typescript: {
@@ -16,7 +14,6 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
