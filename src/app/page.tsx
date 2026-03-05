@@ -1,20 +1,23 @@
+'use client';
+
 import { Navigation } from '@/components/Navigation';
 import { ResourceSection } from '@/components/ResourceSection';
 import { Button } from '@/components/ui/button';
 import { ShieldCheck, Flame, Droplets, MapPin, Search, LifeBuoy, Info } from 'lucide-react';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { usePlaceholderImages } from '@/lib/placeholder-images';
 
 export default function Home() {
+  const images = usePlaceholderImages();
   // Extract images from placeholder file
-  const mitigationImg = PlaceHolderImages.find(img => img.id === 'mitigation-hero');
-  const activeFireImg = PlaceHolderImages.find(img => img.id === 'during-fire-hero');
-  const postFireImg = PlaceHolderImages.find(img => img.id === 'post-fire-hero');
+  const mitigationImg = images.find(img => img.id === 'mitigation-hero');
+  const activeFireImg = images.find(img => img.id === 'during-fire-hero');
+  const postFireImg = images.find(img => img.id === 'post-fire-hero');
   
-  const forestDetail = PlaceHolderImages.find(img => img.id === 'forest-detail');
-  const rebuildDetail = PlaceHolderImages.find(img => img.id === 'rebuild-detail');
-  const rainDetail = PlaceHolderImages.find(img => img.id === 'rain-detail');
-  const shelterDetail = PlaceHolderImages.find(img => img.id === 'shelter-detail');
+  const forestDetail = images.find(img => img.id === 'forest-detail');
+  const rebuildDetail = images.find(img => img.id === 'rebuild-detail');
+  const rainDetail = images.find(img => img.id === 'rain-detail');
+  const shelterDetail = images.find(img => img.id === 'shelter-detail');
 
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-accent/30 selection:text-accent-foreground">

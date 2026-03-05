@@ -1,4 +1,6 @@
-import data from './placeholder-images.json';
+'use client';
+
+import { useState, useEffect } from 'react';
 
 export type ImagePlaceholder = {
   id: string;
@@ -7,4 +9,14 @@ export type ImagePlaceholder = {
   imageHint: string;
 };
 
-export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages;
+export function usePlaceholderImages() {
+  const [images, setImages] = useState<ImagePlaceholder[]>([]);
+
+  useEffect(() => {
+    fetch('/placeholder-images.json')
+      .then(response => response.json())
+      .then(data => setImages(data.placeholderImages));
+  }, []);
+
+  return images;
+}
